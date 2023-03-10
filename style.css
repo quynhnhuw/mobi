@@ -1,41 +1,126 @@
-*{
+/* *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+} */
+html {
+    font-family: 'SF Pro Display';
     box-sizing: border-box;
 }
 
 .login {
-    position: relative;
-    width: 414px;
-    height: 896px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 896px; 
+    width: 500px;
+    padding: 0 50px;
     background: linear-gradient(180deg, #E5B2CA 0%, #CD82DE 100%);
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 50px;
-}
-
-button {
-    width: 342px;
+    margin: 10px 40px 10px 40px;
     height: 70px;
+    width: 100%;
     background: #78258B;
     box-shadow: 0px 25px 45px rgba(120, 37, 139, 0.25);
     border-radius: 37px;
 }
 
-.input {
-    width: 342px;
-    height: 74px;
+.button-create {
+    margin: 10px 40px 5px 40px;
+    height: 70px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.28);
+    box-shadow: 0px 25px 45px rgba(120, 37, 139, 0.25);
+    border-radius: 37px;
+}
+button {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    height: 19px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    height: 290px;
+}
+
+.text-heading {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.75);
+}
+.text-desc {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+/* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.input-container input {
+    margin: 10px 40px 5px 40px;
+    padding: 0 100px;
+    width: 100%;
+    height: 70px;
     background: #FFFFFF;
     border-radius: 37px;
     border: none;
-    margin: 20px;
+    outline: none;
+    padding: 0 20px;
+    font-size: 34px;
 }
 
-.h {
-   
+/* .input-container :focus {
+    background-color: yellow;
+} */
 
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 80%;
+    gap: 10px;
+}
+
+.divider .divider-dash {
+    border: 1px dashed white;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-container:hover {
+    background-color: #3b1144;
+    cursor: pointer;
+}
+
+.button-create:hover {
+    background-color: #E5B2CA;
+    cursor: pointer;
 }
